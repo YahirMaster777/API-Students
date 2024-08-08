@@ -1,8 +1,8 @@
-import student from "../models/students";
+import Students from "../models/students.js";
 
 const studentDAO ={};
 studentDAO.getAll=async()=>{
-    return await student.find(); 
+    return await Students.find(); 
 };
 
 export default studentDAO

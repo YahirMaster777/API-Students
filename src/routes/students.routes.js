@@ -1,11 +1,8 @@
 import { Router } from 'express'
+import { getAll } from '../controllers/students.controller.js'
 
 const router = Router()
 
-router.get('/sqrt/:num', (req, res) => {
-    const { num } = req.params
-    const sqrt = Math.sqrt(num)
-    res.json({"result": sqrt})
-})
-
+router.get('/getAll', getAll)
+  
 export default router
